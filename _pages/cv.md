@@ -14,37 +14,11 @@ permalink: /cv/
   </a>
 </div>
 
-<!-- Embedded PDF -->
-<style>
-/* Responsive PDF container */
-.cv-container {
-  position: relative;
-  padding-bottom: 140%;
-  height: 0;
-  border: 1px solid #ccc;
-  overflow: hidden;
-}
-
-/* PDF iframe fills container */
-.cv-container iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-
-/* Mobile adjustments */
-@media (max-width: 768px) {
-  .cv-container {
-    padding-bottom: 250%; /* taller for mobile screens */
-  }
-}
-</style>
-
-<div class="cv-container">
-  <iframe src="/files/Pulliam_CV_5_15_2025.pdf" frameborder="0">
-    This browser does not support PDFs. Please download the PDF to view it: 
-    <a href="/files/Pulliam_CV_5_15_2025.pdf">Download CV</a>.
+<!-- Embedded PDF via Google Docs Viewer -->
+<div style="width:100%; max-width:100%; height:800px; border:1px solid #ccc;">
+  <iframe 
+    src="https://docs.google.com/gview?url=https://YOUR-USERNAME.github.io/files/Pulliam_CV_5_15_2025.pdf&embedded=true" 
+    style="width:100%; height:100%;" frameborder="0">
+    Your browser does not support embedded PDFs. Please <a href="/files/Pulliam_CV_5_15_2025.pdf">download the PDF</a> to view it.
   </iframe>
 </div>
