@@ -9,7 +9,7 @@
 
 main:
   - title: "CV"
-    url: /files/Pulliam_CV_5_15_2025.pdf
+    url: /cv/
     
   - title: "Research"
     url: /research/
