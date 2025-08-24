@@ -26,7 +26,7 @@ author:
   name             : "Christopher L. Pulliam"
   pronouns         : # example: "she/her"  
   bio              : "PhD Candidate"
-  location         : #
+  #location         : #
   employer         : "Columbia University"
   uri              : # URL
   email            : "c.pulliam@columbia.edu" 
@@ -37,9 +37,9 @@ author:
   googlescholar    : "https://scholar.google.com/citations?user=_-h10AsAAAAJ&hl=en&oi=sra"
   inspire-hep      : # URL
   impactstory      : # URL
-  orcid            : ""
+  #orcid            : ""
   semantic         : # URL
-  pubmed           : ""
+  #pubmed           : ""
   researchgate     : # URL
   scopus           : # URL
 
@@ -47,7 +47,7 @@ author:
   bitbucket        : # Username - Update with your username on the site
   codepen          : # Username
   dribbble         : # Username
-  github           : "academicpages"
+  #github           : "academicpages"
   kaggle           : # Username  
   stackoverflow    : # User number or user number and name (i.e., use "1" or "1/jeff-atwood")    
 
