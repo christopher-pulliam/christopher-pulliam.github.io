@@ -1,7 +1,7 @@
 ---
 title: "Stuck on the Ladder: Intragenerational Wealth Mobility in the United States"
 collection: publications
-category: reports
+category: policyreports
 permalink: /publication/2022-stuck-on-the-ladder
 excerpt: 'Analysis of intragenerational wealth mobility in the U.S.'
 date: 2022-01-01
