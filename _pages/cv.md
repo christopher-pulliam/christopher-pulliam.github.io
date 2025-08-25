@@ -14,11 +14,11 @@ permalink: /cv/
   </a>
 </div>
 
-<!-- Embedded PDF via Google Docs Viewer -->
-<div style="width:100%; max-width:100%; height:800px; border:1px solid #ccc;">
-  <iframe 
-    src="https://docs.google.com/gview?url=https://YOUR-USERNAME.github.io/files/Pulliam_CV_5_15_2025.pdf&embedded=true" 
-    style="width:100%; height:100%;" frameborder="0">
-    Your browser does not support embedded PDFs. Please <a href="/files/Pulliam_CV_5_15_2025.pdf">download the PDF</a> to view it.
+<!-- Embedded PDF -->
+<div style="width:100%; max-width:100%; overflow-x:hidden; border:1px solid #ccc;">
+  <iframe src="/files/Pulliam_CV_5_15_2025.pdf" 
+          style="width:100%; height:1200px;" 
+          frameborder="0" scrolling="auto">
+    This browser does not support PDFs. Please <a href="/files/Pulliam_CV_5_15_2025.pdf">download the PDF</a> to view it.
   </iframe>
 </div>
