@@ -24,11 +24,11 @@ author_profile: true
       {% endunless %}
 
       <div class="pub-entry">
-        <div class="pub-content">
-          {% capture numbered_content %}
-            [{{ counter }}] {% include archive-single.html %}
-          {% endcapture %}
-          {{ numbered_content | strip }}
+        <div class="pub-number">[{{ counter }}]</div>
+        <div class="pub-content-wrapper">
+          <div class="pub-content">
+            {% include archive-single.html %}
+          </div>
         </div>
       </div>
 
@@ -39,11 +39,11 @@ author_profile: true
   {% assign counter = site.publications.size %}
   {% for post in site.publications reversed %}
     <div class="pub-entry">
-      <div class="pub-content">
-        {% capture numbered_content %}
-          [{{ counter }}] {% include archive-single.html %}
-        {% endcapture %}
-        {{ numbered_content | strip }}
+      <div class="pub-number">[{{ counter }}]</div>
+      <div class="pub-content-wrapper">
+        <div class="pub-content">
+          {% include archive-single.html %}
+        </div>
       </div>
     </div>
     {% assign counter = counter | minus: 1 %}
