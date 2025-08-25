@@ -15,22 +15,29 @@ author_profile: true
 {% if site.publication_category %}
   {% for category in site.publication_category  %}
     {% assign title_shown = false %}
-    {% for post in site.publications reversed %}
-      {% if post.category != category[0] %}
-        {% continue %}
-      {% endif %}
+    
+    <!-- Get publications in this category and sort by date -->
+    {% assign pubs_in_category = site.publications | where: "category", category[0] | sort: "date" %}
+    {% assign counter = pubs_in_category.size %}
+    
+    {% for post in pubs_in_category reversed %}
       {% unless title_shown %}
         <h2>{{ category[1].title }}</h2><hr />
         {% assign title_shown = true %}
       {% endunless %}
-      {% include archive-single.html %}
+      
+      <div class="pub-entry">
+        [{{ counter }}] {% include archive-single.html %}
+      </div>
+      {% assign counter = counter | minus: 1 %}
     {% endfor %}
   {% endfor %}
 {% else %}
+  {% assign counter = site.publications.size %}
   {% for post in site.publications reversed %}
-    {% include archive-single.html %}
+    <div class="pub-entry">
+      [{{ counter }}] {% include archive-single.html %}
+    </div>
+    {% assign counter = counter | minus: 1 %}
   {% endfor %}
 {% endif %}
-
-
-
