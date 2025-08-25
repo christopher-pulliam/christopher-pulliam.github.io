@@ -25,8 +25,10 @@ author_profile: true
 
       <div class="pub-entry">
         <span class="pub-number">[{{ counter }}]</span>
-        <div class="pub-content">
-          {% include archive-single.html %}
+        <div class="pub-content-wrapper">
+          <div class="pub-content">
+            {% include archive-single.html %}
+          </div>
         </div>
       </div>
 
@@ -38,8 +40,10 @@ author_profile: true
   {% for post in site.publications reversed %}
     <div class="pub-entry">
       <span class="pub-number">[{{ counter }}]</span>
-      <div class="pub-content">
-        {% include archive-single.html %}
+      <div class="pub-content-wrapper">
+        <div class="pub-content">
+          {% include archive-single.html %}
+        </div>
       </div>
     </div>
     {% assign counter = counter | minus: 1 %}
