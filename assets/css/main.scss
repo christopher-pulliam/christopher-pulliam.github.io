@@ -41,3 +41,17 @@
     "vendor/font-awesome/solid",
     "vendor/font-awesome/brands"
 ;
+
+/* --------------------------
+   Custom styling for publication numbering
+--------------------------- */
+
+.pub-entry {
+  margin-bottom: 0.8em; /* space between publications */
+}
+
+.pub-entry span.pub-number {
+  font-weight: bold;
+  margin-right: 0.5em;
+  color: #333; /* adjust to match site theme */
+}
