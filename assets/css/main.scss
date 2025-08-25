@@ -42,13 +42,30 @@
     "vendor/font-awesome/brands"
 ;
 
-/* Publications spacing and number styling */
+/* Publication numbering with proper left alignment */
 .pub-entry {
-  margin-bottom: 0.8em; /* space between publications */
+  display: flex;
+  align-items: flex-start; /* top-align number with content */
+  margin-bottom: 0.8em;
 }
 
-.pub-content strong {
-  font-weight: bold;    /* bold number */
-  margin-right: 0.5em;  /* space between number and text */
+.pub-number {
+  font-weight: bold;
+  margin-right: 0.5em;
+  min-width: 2em;   /* fixed width for consistent alignment */
+  text-align: right;
+  flex-shrink: 0;   /* prevents shrinking */
+}
+
+.pub-content {
+  flex: 1;
+}
+
+.pub-content p:first-child {
+  margin-top: 0;    /* remove extra top margin */
+}
+
+.pub-content p {
+  margin-bottom: 0.3em; /* optional spacing for multi-line entries */
 }
 
