@@ -42,21 +42,37 @@
     "vendor/font-awesome/brands"
 ;
 
-/* Publication numbering with left-aligned numbers */
 .pub-entry {
   display: flex;
-  align-items: flex-start;  /* aligns number with top of content */
+  align-items: flex-start; /* fallback for single-line entries */
   margin-bottom: 0.8em;
 }
 
+/* Number container */
 .pub-number {
   font-weight: bold;
   margin-right: 0.5em;
-  min-width: 2em;  /* ensures numbers are aligned */
+  min-width: 2em;       /* keeps numbers aligned in a column */
   text-align: right;
+  line-height: 1;       /* aligns with first line of text */
 }
 
+/* Content container */
 .pub-content {
-  flex: 1;  /* content takes remaining space */
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* vertically center number with content */
 }
+
+/* Optional: remove extra top margin from first paragraph */
+.pub-content p:first-child {
+  margin-top: 0;
+}
+
+/* Optional: reduce spacing for multi-line entries */
+.pub-content p {
+  margin-bottom: 0.3em;
+}
+
 
