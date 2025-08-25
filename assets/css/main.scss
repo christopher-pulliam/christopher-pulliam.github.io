@@ -42,16 +42,21 @@
     "vendor/font-awesome/brands"
 ;
 
-/* --------------------------
-   Custom styling for publication numbering
---------------------------- */
-
+/* Publication numbering with left-aligned numbers */
 .pub-entry {
-  margin-bottom: 0.8em; /* space between publications */
+  display: flex;
+  align-items: flex-start;  /* aligns number with top of content */
+  margin-bottom: 0.8em;
 }
 
-.pub-entry span.pub-number {
+.pub-number {
   font-weight: bold;
   margin-right: 0.5em;
-  color: #333; /* adjust to match site theme */
+  min-width: 2em;  /* ensures numbers are aligned */
+  text-align: right;
 }
+
+.pub-content {
+  flex: 1;  /* content takes remaining space */
+}
+
