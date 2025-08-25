@@ -24,8 +24,9 @@ author_profile: true
       {% endunless %}
 
       <div class="pub-entry">
+        <div class="pub-number">[{{ counter }}]</div>
         <div class="pub-content">
-          <strong>[{{ counter }}]</strong> {% include archive-single.html %}
+          {% include archive-single.html %}
         </div>
       </div>
 
@@ -36,8 +37,9 @@ author_profile: true
   {% assign counter = site.publications.size %}
   {% for post in site.publications reversed %}
     <div class="pub-entry">
+      <div class="pub-number">[{{ counter }}]</div>
       <div class="pub-content">
-        <strong>[{{ counter }}]</strong> {% include archive-single.html %}
+        {% include archive-single.html %}
       </div>
     </div>
     {% assign counter = counter | minus: 1 %}
