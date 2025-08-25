@@ -16,29 +16,36 @@ My CV (scroll below or download directly):
   </a>
 </div>
 
-<!-- Embedded PDF with scaling for mobile -->
-<style>
-/* Default scaling for desktop */
-.cv-iframe {
-  width: 100%;
-  height: 1200px;
-  transform: scale(1);
-  transform-origin: top left;
-}
+<!-- PDF.js container -->
+<div id="pdf-container" style="width:100%; max-width:800px; margin:auto; border:1px solid #ccc;"></div>
 
-/* Mobile scaling */
-@media (max-width: 768px) {
-  .cv-iframe {
-    transform: scale(0.7);  /* shrink width by 30% */
-    height: 1700px;          /* adjust height to accommodate scaling */
-  }
-}
-</style>
+<!-- PDF.js library -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.10.141/pdf.min.js"></script>
 
-<div style="width:100%; overflow-x:hidden; border:1px solid #ccc;">
-  <iframe class="cv-iframe"
-          src="/files/Pulliam_CV_5_15_2025.pdf" 
-          frameborder="0" scrolling="auto">
-    This browser does not support PDFs. Please <a href="/files/Pulliam_CV_5_15_2025.pdf">download the PDF</a>.
-  </iframe>
-</div>
+<script>
+  const url = '/files/Pulliam_CV_5_15_2025.pdf';
+  const pdfjsLib = window['pdfjs-dist/build/pdf'];
+  pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.10.141/pdf.worker.min.js';
+
+  const container = document.getElementById('pdf-container');
+
+  pdfjsLib.getDocument(url).promise.then(pdf => {
+    for (let i = 1; i <= pdf.numPages; i++) {
+      pdf.getPage(i).then(page => {
+        const viewport = page.getViewport({ scale: 1.5 }); // Adjust for clarity
+        const canvas = document.createElement('canvas');
+        container.appendChild(canvas);
+        const ctx = canvas.getContext('2d');
+
+        // Scale canvas to container width
+        const scale = container.clientWidth / viewport.width;
+        const scaledViewport = page.getViewport({ scale: 1.5 * scale });
+
+        canvas.height = scaledViewport.height;
+        canvas.width = scaledViewport.width;
+
+        page.render({ canvasContext: ctx, viewport: scaledViewport });
+      });
+    }
+  });
+</script>
