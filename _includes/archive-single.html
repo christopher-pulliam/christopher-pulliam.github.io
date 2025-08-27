@@ -5,14 +5,10 @@
     {% if post.collection == 'publications' %}
       <p>
         {% if post.authors %}{{ post.authors }} ({{ post.date | date: "%Y" }}) {% endif %}
-        {% if post.category == 'policy_report' or post.category == 'policy_note' %}
-          <span class="policy-venue">{{ post.venue }}</span>
-        {% else %}
-          <i>{{ post.venue }}</i>
-        {% endif %}
+        {{ post.venue }}
       </p>
     {% elsif post.collection == 'teaching' %}
-      <p>{{ post.type }}, <i>{{ post.venue }}</i>, {{ post.date | date: "%Y" }}</p>
+      <p>{{ post.type }}, {{ post.venue }}, {{ post.date | date: "%Y" }}</p>
     {% elsif post.date %}
       <p class="page__date">{{ post.date | date: "%B %d, %Y" }}</p>
     {% endif %}
