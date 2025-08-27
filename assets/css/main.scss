@@ -69,10 +69,10 @@
   margin-bottom: 0.3em; /* optional spacing for multi-line content */
 }
 
-/* Remove link styling from publication titles */
-.pub-content-wrapper .archive__item-title {
-  text-decoration: none;  /* remove underline */
-  cursor: default;        /* remove hand pointer */
-  color: inherit;         /* match normal text color */
+/* Force publication titles to behave like normal text */
+.archive__item-title,
+.archive__item-title * {
+  text-decoration: none !important;  /* remove underline */
+  cursor: default !important;        /* remove pointer */
+  color: inherit !important;          /* inherit normal text color */
 }
-
