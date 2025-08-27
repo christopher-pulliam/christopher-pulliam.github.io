@@ -1,7 +1,7 @@
 ---
 title: "Simulating Income Tax Liabilities in the Survey of Consumer Finances"
 collection: publications
-category: journalarticles
+category: policyreports
 #permalink: 
 #exceprt:
 date: 2022-02-02
