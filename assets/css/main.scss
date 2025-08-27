@@ -77,8 +77,11 @@
   color: inherit !important;          /* inherit normal text color */
 }
 
-/* Ensure policy report/notes venues are normal text */
+/* Force normal text for policy report/note venues */
 .pub-content-wrapper .policy-venue {
+  all: unset !important;       /* removes all inherited styles */
   font-style: normal !important;
+  font-weight: normal !important;
+  text-transform: none !important;
 }
 
