@@ -76,3 +76,9 @@
   cursor: default !important;        /* remove pointer */
   color: inherit !important;          /* inherit normal text color */
 }
+
+/* Ensure policy report/notes venues are normal text */
+.pub-content-wrapper .policy-venue {
+  font-style: normal !important;
+}
+
