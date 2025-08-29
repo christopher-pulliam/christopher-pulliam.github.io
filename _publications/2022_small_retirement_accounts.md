@@ -1,4 +1,3 @@
-
 ---
 title: "Small Retirement Accounts: Issues and Options"
 collection: publications
