@@ -19,8 +19,10 @@ You can also find my articles on <a href="{{site.author.googlescholar}}">my Goog
         <h2>{{ category[1].title }}</h2><hr />
         {% assign title_shown = true %}
       {% endunless %}
-      <div class="pub-number">{{ cat_counter }}.</div>
-      {% include archive-single.html %}
+      <div class="pub-row">
+        <div class="pub-number">{{ cat_counter }}.</div>
+        {% include archive-single.html %}
+      </div>
       {% assign cat_counter = cat_counter | minus: 1 %}
     {% endfor %}
   {% endfor %}
@@ -28,8 +30,10 @@ You can also find my articles on <a href="{{site.author.googlescholar}}">my Goog
   {% assign total = site.publications | size %}
   {% assign counter = total %}
   {% for post in site.publications reversed %}
-    <div class="pub-number">{{ counter }}.</div>
-    {% include archive-single.html %}
+    <div class="pub-row">
+      <div class="pub-number">{{ counter }}.</div>
+      {% include archive-single.html %}
+    </div>
     {% assign counter = counter | minus: 1 %}
   {% endfor %}
 {% endif %}
