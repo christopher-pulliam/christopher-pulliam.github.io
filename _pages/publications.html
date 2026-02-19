@@ -4,35 +4,24 @@ title: "Research"
 permalink: /research/
 author_profile: true
 ---
-
 {% if site.author.googlescholar %}
-
 You can also find my articles on <a href="{{site.author.googlescholar}}">my Google Scholar profile</a>.
-
 {% endif %}
-
 {% include base_path %}
-
 {% if site.publication_category %}
   {% for category in site.publication_category %}
     {% assign pubs_in_category = site.publications | where: "category", category[0] | sort: "date" %}
     {% assign title_shown = false %}
-
     {% for post in pubs_in_category reversed %}
       {% unless title_shown %}
         <h2>{{ category[1].title }}</h2><hr />
         {% assign title_shown = true %}
       {% endunless %}
-
-      <div class="pub-entry">
-        {% include archive-single.html %}
-      </div>
+      {% include archive-single.html %}
     {% endfor %}
   {% endfor %}
 {% else %}
   {% for post in site.publications reversed %}
-    <div class="pub-entry">
-      {% include archive-single.html %}
-    </div>
+    {% include archive-single.html %}
   {% endfor %}
 {% endif %}
