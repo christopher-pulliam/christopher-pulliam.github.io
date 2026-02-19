@@ -1,11 +1,11 @@
 ---
 title: "Teaching Assistant"
 collection: teaching
-type: ""
-permalink: 
+type: "Teaching Assistant"
+permalink: /teaching/2025-spring-teaching-1
 venue: "Columbia University School of Social Work"
-date: Spring 2025
-location: 
+date: 2025-01-01
+location: "New York, NY"
 ---
 
 Advanced Research Methods and Statistics [master's]
