@@ -48,17 +48,17 @@
   padding-top: 0;
 }
 
-.pub-content-wrapper {
+.pub-entry {
   flex: 1;
 }
 
-.pub-content-wrapper p {
+.pub-entry p {
   margin-top: 0.3em;
   margin-bottom: 0.3em;
 }
 
-.pub-content-wrapper h3 {
-  margin-top: 0;
+.pub-entry .archive__item-title {
+  margin-top: 0 !important;
   margin-bottom: 0.2em;
 }
 
