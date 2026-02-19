@@ -7,11 +7,4 @@ venue: "Columbia University School of Social Work"
 date: 2025-01-01
 location: "New York, NY"
 ---
-Heading 1
-======
 
-Heading 2
-======
-
-Heading 3
-======
