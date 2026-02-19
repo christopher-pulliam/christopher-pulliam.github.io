@@ -1,26 +1,20 @@
 ---
 ---
-
 /*
  * This file controls what is imported from /_sass
  *
  * Note that the files are processed in the order they are imported, so they are partly
    sorted by the dependencies. Also, the first two lines of the file are required by Jekyll.
  */
-
 @import
     "vendor/breakpoint/breakpoint",
-
     "themes",
     "theme/{{ site.site_theme | default: 'default' | append: '_light' }}",
     "theme/{{ site.site_theme | default: 'default' | append: '_dark' }}",
-
     "include/mixins",
     "vendor/susy/susy",
-
     "layout/reset",
     "layout/base",
-
     "include/utilities",
     "layout/tables",
     "layout/buttons",
@@ -29,44 +23,37 @@
     "layout/navigation",
     "layout/footer",
     "syntax",
-
     "layout/forms",
-
     "layout/page",
     "layout/archive",
     "layout/sidebar",
     "layout/json_cv",
-
     "vendor/font-awesome/fontawesome",
     "vendor/font-awesome/solid",
     "vendor/font-awesome/brands"
 ;
 
-/* Publications numbering with left-aligned numbers */
+/* Publications numbering */
+h2 {
+  counter-reset: pub-counter;
+}
+
 .pub-entry {
-  display: flex;
-  align-items: flex-start; /* aligns number with top of content */
+  counter-increment: pub-counter;
+  position: relative;
+  padding-left: 2em;
   margin-bottom: 0.5em;
 }
 
+.pub-entry::before {
+  content: counter(pub-counter) ". ";
+  position: absolute;
+  left: 0;
+  font-weight: bold;
+}
+
 .pub-content-wrapper {
-  flex: 1;               /* content takes remaining space */
-}
-
-.pub-content p:first-child {
-  margin-top: 0;        /* remove top margin to align with number */
-}
-
-.pub-content p {
-  margin-bottom: 0.2em; /* optional spacing for multi-line content */
-}
-
-/* Force publication titles to behave like normal text */
-.archive__item-title,
-.archive__item-title * {
-  text-decoration: none !important;  /* remove underline */
-  cursor: default !important;        /* remove pointer */
-  color: inherit !important;          /* inherit normal text color */
+  flex: 1;
 }
 
 .pub-content-wrapper p {
@@ -79,20 +66,10 @@
   margin-bottom: 0.2em;
 }
 
-/* Initialize counter on the section containing your entries */
-h2 {
-  counter-reset: pub-counter;
-}
-
-.pub-entry {
-  counter-increment: pub-counter;
-  position: relative;
-  padding-left: 2em;
-}
-
-.pub-entry::before {
-  content: counter(pub-counter) ". ";
-  position: absolute;
-  left: 0;
-  font-weight: bold;
+/* Force publication titles to behave like normal text */
+.archive__item-title,
+.archive__item-title * {
+  text-decoration: none !important;
+  cursor: default !important;
+  color: inherit !important;
 }
