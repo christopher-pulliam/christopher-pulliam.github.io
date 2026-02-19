@@ -2,7 +2,7 @@
 title: "Teaching Assistant"
 collection: teaching
 type: ""
-permalink:
+permalink: 
 venue: "Columbia University School of Social Work"
 date: Spring 2025
 location: 
