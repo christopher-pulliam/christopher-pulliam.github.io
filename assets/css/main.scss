@@ -49,14 +49,6 @@
   margin-bottom: 0.5em;
 }
 
-.pub-number {
-  font-weight: bold;
-  min-width: 2em;       /* fixed width for alignment */
-  text-align: right;
-  margin-right: 0.5em;
-  flex-shrink: 0;       /* prevents number from shrinking */
-}
-
 .pub-content-wrapper {
   flex: 1;               /* content takes remaining space */
 }
