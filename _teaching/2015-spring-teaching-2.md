@@ -1,15 +1,14 @@
 ---
-title: "Teaching experience 2"
+title: "Teaching Assistant"
 collection: teaching
-type: "Workshop"
-permalink: /teaching/2015-spring-teaching-1
-venue: "University 1, Department"
-date: 2015-01-01
-location: "City, Country"
+type: ""
+permalink:
+venue: "Columbit University School of Social Work"
+date: Spring 2025
+location: 
 ---
 
-This is a description of a teaching experience. You can use markdown like any other post.
-
+Advanced Research Methods and Statistics [master's]
 Heading 1
 ======
 
