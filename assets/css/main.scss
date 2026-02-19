@@ -33,9 +33,18 @@
     "vendor/font-awesome/brands"
 ;
 
+.pub-row {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 0.5em;
+}
+
 .pub-number {
   font-weight: bold;
-  margin-bottom: 0.2em;
+  min-width: 2em;
+  text-align: right;
+  margin-right: 0.5em;
+  flex-shrink: 0;
 }
 
 .pub-content-wrapper {
