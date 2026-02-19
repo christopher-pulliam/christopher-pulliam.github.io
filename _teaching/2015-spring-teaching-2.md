@@ -3,7 +3,7 @@ title: "Teaching Assistant"
 collection: teaching
 type: ""
 permalink:
-venue: "Columbit University School of Social Work"
+venue: "Columbia University School of Social Work"
 date: Spring 2025
 location: 
 ---
