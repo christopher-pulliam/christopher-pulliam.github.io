@@ -86,3 +86,21 @@
   margin-top: 0;
   margin-bottom: 0.2em;
 }
+
+/* Initialize counter on the section containing your entries */
+h2 {
+  counter-reset: pub-counter;
+}
+
+.pub-entry {
+  counter-increment: pub-counter;
+  position: relative;
+  padding-left: 2em;
+}
+
+.pub-entry::before {
+  content: counter(pub-counter) ". ";
+  position: absolute;
+  left: 0;
+  font-weight: bold;
+}
