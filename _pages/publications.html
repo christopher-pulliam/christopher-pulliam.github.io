@@ -12,16 +12,24 @@ You can also find my articles on <a href="{{site.author.googlescholar}}">my Goog
   {% for category in site.publication_category %}
     {% assign pubs_in_category = site.publications | where: "category", category[0] | sort: "date" %}
     {% assign title_shown = false %}
+    {% assign cat_total = pubs_in_category | size %}
+    {% assign cat_counter = cat_total %}
     {% for post in pubs_in_category reversed %}
       {% unless title_shown %}
         <h2>{{ category[1].title }}</h2><hr />
         {% assign title_shown = true %}
       {% endunless %}
+      <div class="pub-number">{{ cat_counter }}.</div>
       {% include archive-single.html %}
+      {% assign cat_counter = cat_counter | minus: 1 %}
     {% endfor %}
   {% endfor %}
 {% else %}
+  {% assign total = site.publications | size %}
+  {% assign counter = total %}
   {% for post in site.publications reversed %}
+    <div class="pub-number">{{ counter }}.</div>
     {% include archive-single.html %}
+    {% assign counter = counter | minus: 1 %}
   {% endfor %}
 {% endif %}
