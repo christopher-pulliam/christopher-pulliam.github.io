@@ -6,9 +6,8 @@ redirect_from:
   - /about/
   - /about.html
 ---
-*WEBSITE UNDER CONSTRUCTION*
 
-I am a PhD Candidate at the Columbia University School of Social Work. My research focuses on intergenerational mobility, poverty, and the social safety net. I am especially interested in how income-support policies affect the transmission of health and economic status across generations. Before Columbia, I was a research analyst at the Brookings Institution, where I focused on inequality, social mobility, and the American middle class. I hold an MPA from the Maxwell School of Syracuse University. 
+I am a PhD Candidate, with concentrations in social policy and economics, at the Columbia University School of Social Work. My research focuses on intergenerational mobility, poverty, and the social safety net in the United States. My current projects investigate how income-support programs affect the economic well-being and health of American children and families. Before Columbia, I was a research analyst at the Brookings Institution.
 
 I will join the Stone Center on Socio-Economic Inequality at the CUNY Graduate Center as a Postdoctoral Scholar in Fall 2026.
 
