@@ -82,6 +82,8 @@ author:
 publication_category:
   journalarticles:
     title: 'Journal Articles'  
+  papersunderreview:
+    title: 'Papers Under Review'
   workingpapers:
     title: 'Working Papers' 
   policyreports:
