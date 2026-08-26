@@ -7,7 +7,7 @@ redirect_from:
   - /about.html
 ---
 
-I am a PhD Candidate, with concentrations in social policy and economics, at the Columbia University School of Social Work. My research focuses on intergenerational mobility, poverty, and the social safety net in the United States. My current projects investigate how income-support programs affect the economic well-being and health of American children and families. Before Columbia, I was a research analyst at the Brookings Institution.
+I am a Postdoctoral Scholar at the Stone Center on Socio-Economic Inequality, CUNY Graduate Center. My research focuses on intergenerational mobility, poverty, and the social safety net in the United States. My current projects investigate how income-support programs affect the economic well-being and health of American children and families. 
 
-I will join the Stone Center on Socio-Economic Inequality at the CUNY Graduate Center as a Postdoctoral Scholar in Fall 2026.
+I hold a PhD from Columbia University and an MPA from the Maxwell School of Syracuse University. Before pursuing doctoral studies, I was a research analyst at the Brookings Institution.
 
