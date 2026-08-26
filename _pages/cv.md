@@ -18,6 +18,6 @@ My CV (scroll below or download directly):
 
 <!-- Embedded Google Drive PDF -->
 <div style="width:100%; height:800px; border:1px solid #ccc;">
-  <iframe src="https://drive.google.com/file/d/1Rsx1wzDUFe-6i_NNV_Y_yoeiJu3dE_c1/preview" 
+  <iframe src="https://drive.google.com/file/d/1eJkrEPpLTpkwPqVv7J-92mQNjpDSuBkQ/preview" 
           style="width:100%; height:100%;" frameborder="0"></iframe>
 </div>
