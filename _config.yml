@@ -8,7 +8,7 @@
 
 # Basic Site Settings
 locale                   : "en-US"
-site_theme               : "default" # Currently available options are "default", "air"
+site_theme               : "air" # Currently available options are "default", "air"
 title                    : "Christopher L. Pulliam"
 title_separator          : "-"
 name                     : &name "Christopher L. Pulliam"
@@ -27,7 +27,7 @@ author:
   pronouns         : # example: "she/her"  
   bio              : "Postdoctoral Scholar"
   #location         : #
-  employer         : "Stone Center on Socio-Economic Inequality, CUNY Graduate Center"
+  employer         : "CUNY Graduate Center"
   uri              : # URL
   email            : "cpulliam@gc.cuny.edu" 
 
